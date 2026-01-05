@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shatabdi Soni | Portfolio</title>
+
+<style>
+/* ===== GLOBAL ===== */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364);
+    background-size: 400% 400%;
+    animation: gradientBG 12s ease infinite;
+    color: white;
+    line-height: 1.6;
+}
+
+@keyframes gradientBG {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+/* ===== HEADER ===== */
+header {
+    max-width: 1000px;
+    margin: auto;
+    padding: 80px 20px 40px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* PHOTO */
+.profile-pic {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 4px solid #00ffff;
+    object-fit: cover;
+    box-shadow: 0 0 25px #00ffff;
+    animation: picGlow 2s infinite alternate;
+}
+
+@keyframes picGlow {
+    from { box-shadow: 0 0 12px #00ffff; }
+    to { box-shadow: 0 0 35px #00ffff; }
+}
+
+/* HEADER TEXT */
+.header-text {
+    text-align: left;
+    min-width: 300px;
+}
+
+.header-text h1 {
+    font-size: 48px;
+    margin: 0;
+    text-shadow: 0 0 20px #00ffff;
+}
+
+.loop-text {
+    font-size: 22px;
+    height: 28px;
+    overflow: hidden;
+    margin-top: 10px;
+    color: #00ffff;
+    font-weight: 500;
+}
+
+.loop-text span {
+    display: block;
+    animation: textLoop 6s infinite;
+}
+
+@keyframes textLoop {
+    0% {transform: translateY(0);}
+    33% {transform: translateY(-28px);}
+    66% {transform: translateY(-56px);}
+    100% {transform: translateY(0);}
+}
+
+/* ===== SECTIONS ===== */
+section {
+    max-width: 900px;
+    margin: 25px auto;
+    background: rgba(255,255,255,0.08);
+    padding: 30px;
+    border-radius: 14px;
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+section:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 30px rgba(0,255,255,0.3);
+    background: rgba(255,255,255,0.12);
+}
+
+h2 {
+    margin-top: 0;
+    color: #00ffff;
+    font-size: 24px;
+    border-bottom: 1px solid rgba(0,255,255,0.3);
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* ===== SKILLS ===== */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills span {
+    display: inline-block;
+    padding: 8px 18px;
+    border-radius: 8px;
+    background: #00ffff;
+    color: #0f2027;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.skills span:hover {
+    background: white;
+    transform: scale(1.1);
+}
+
+/* ===== PROJECTS ===== */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 15px;
+    padding-left: 25px;
+    position: relative;
+}
+
+ul li::before {
+    content: "🚀";
+    position: absolute;
+    left: 0;
+}
+
+/* ===== CONTACT ===== */
+.contact-link {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+}
+
+.contact-link:hover {
+    color: #00ffff;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    padding: 40px 25px;
+    opacity: 0.8;
+    font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <img src="c:\Users\HP\Downloads\WhatsApp Image 2026-01-05 at 10.53.58 PM.jpeg" alt="Shatabdi Soni" class="profile-pic">
+
+    <div class="header-text">
+        <h1>Shatabdi Soni</h1>
+        <div class="loop-text">
+            <span>💻 Web Developer</span>
+            <span>🐍 Python Programmer</span>
+            <span>📜 IBM Certified Expert</span>
+        </div>
+    </div>
+</header>
+
+<section>
+    <h2>👤 Professional Summary</h2>
+    <p>
+        I am a motivated and detail-oriented technology professional with strong
+        proficiency in <strong>HTML, CSS, JavaScript, Python, and C programming</strong>. 
+        I hold an IBM Certification in C Programming and Web Technologies and am 
+        passionate about building clean, responsive, and user-friendly applications.
+    </p>
+</section>
+
+<section>
+    <h2>🛠 Technical Skills</h2>
+    <div class="skills">
+        <span>🌐 HTML5</span>
+        <span>🎨 CSS</span>
+        <span>⚡ JavaScript</span>
+        <span>🐍 Python</span>
+        <span>⚙️ C Programming</span>
+        <span>📂 GitHub</span>
+        <span>🗄️ SQL</span>
+    </div>
+</section>
+
+<section>
+    <h2>📂 Featured Projects</h2>
+    <ul>
+        <li><strong>Marks Grading System:</strong> Built using C to automate total calculation and grade assignments.</li>
+        <li><strong>Personal Portfolio:</strong> A responsive, animated web interface showcasing professional growth.</li>
+        <li><strong>NLP Resume Scanner:</strong> A Python-based tool designed to parse and analyze resumes.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>📞 Get In Touch</h2>
+    <a href="mailto:Shatabdi.soni@rungta.org" class="contact-link">📧 Shatabdi.soni@rungta.org</a>
+    <a href="https://github.com/" class="contact-link" target="_blank">🐙 github.com/yourusername</a>
+    <a href="https://www.linkedin.com/feed/" class="contact-link" target="_blank">🔗 linkedin.com/in/yourprofile</a>
+</section>
+
+<footer>
+    © 2026 | ✨ Designed & Developed by Shatabdi Soni
+</footer>
+
+</body>
+</html>
